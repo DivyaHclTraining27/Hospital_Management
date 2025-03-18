@@ -1,0 +1,4 @@
+{"level":"error","message":"Error caught - MissingSchemaError: Schema hasn't been registered for model \"Job\".\nUse mongoose.model(name, schema)","timestamp":"2025-03-17T21:29:23.674Z"}
+{"level":"error","message":"Error caught - MissingSchemaError: Schema hasn't been registered for model \"Job\".\nUse mongoose.model(name, schema)","timestamp":"2025-03-17T21:29:32.656Z"}
+{"level":"error","message":"Error caught - MissingSchemaError: Schema hasn't been registered for model \"Job\".\nUse mongoose.model(name, schema)","timestamp":"2025-03-17T21:29:35.571Z"}
+{"level":"error","message":"Error caught - MissingSchemaError: Schema hasn't been registered for model \"Job\".\nUse mongoose.model(name, schema)","timestamp":"2025-03-17T21:29:41.784Z"}
