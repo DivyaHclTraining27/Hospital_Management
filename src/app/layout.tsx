@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-
-import Header from "@/components/Header";
+import { ToastContainer } from "react-toastify";
 
 import "./globals.css";
 import App from "./_app";
-import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
   title: "Jobs",
@@ -21,7 +19,6 @@ export default function RootLayout({
       <body>
         <App>
           <div className="h-screen w-screen flex flex-col">
-            <Header />
             <ToastContainer position="top-right" autoClose={5000} />
             <div className="flex h-full w-full items-stretch overflow-hidden">
               {children}

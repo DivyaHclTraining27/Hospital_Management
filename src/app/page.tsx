@@ -1,4 +1,4 @@
-import Dashboard from "@/components/Dashboard";
+import Home from "@/components/Home";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description: "Naukri.com",
 };
 
-export default function Home() {
+export default function Root() {
   return (
     <div className="flex h-full w-full">
-      <Dashboard />
+      <Home />
     </div>
   );
 }
