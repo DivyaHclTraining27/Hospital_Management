@@ -1,6 +1,14 @@
+import { signOut } from "next-auth/react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Sidebar = () => {
+    const router = useRouter();
+    const handleLogout = () => {
+        signOut();
+        router.push('/');
+    };
+
     return (
         <div className="w-64 min-h-screen bg-sky-500 text-white p-5">
             <h1 className="text-xl font-bold">Bayer Health</h1>
@@ -27,7 +35,7 @@ const Sidebar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/logout" className="hover:text-gray-300">
+                        <Link onClick={handleLogout} href="/" className="hover:text-gray-300">
                             Logout
                         </Link>
                     </li>
