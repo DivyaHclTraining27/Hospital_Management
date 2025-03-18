@@ -2,7 +2,7 @@ import fetchMock from "jest-fetch-mock";
 
 import { render, } from "@testing-library/react";
 import Dashboard from "../../components/Dashboard";
-import { IJob } from "@/interfaces/job";
+import { IJob } from "@/interfaces/health";
 import { ObjectId } from "mongoose";
 
 fetchMock.enableMocks();

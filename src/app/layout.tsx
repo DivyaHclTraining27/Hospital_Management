@@ -5,7 +5,7 @@ import "./globals.css";
 import App from "./_app";
 
 export const metadata: Metadata = {
-  title: "Jobs",
+  title: "Disease Management",
   description: "Your job search ends here",
 };
 

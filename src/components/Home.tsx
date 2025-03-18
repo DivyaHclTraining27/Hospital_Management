@@ -1,7 +1,10 @@
-import React from "react";
+"use client"
+import React, { SyntheticEvent } from "react";
 import HealthTopic from "./HealthTopic";
+import { useRouter } from "next/navigation";
 
 const Home = () => {
+  const router = useRouter();
   const tabs = ["Home", "Health Topic", "Resources", "About Us", "Contact"];
   const cardData = [
     {
@@ -20,9 +23,21 @@ const Home = () => {
         "stay informed about the latest covid-19 guidelines and vaccination information",
     },
   ];
+  const handleRouting = (e: SyntheticEvent<HTMLButtonElement>) => {
+    const { name } = e?.target as HTMLButtonElement;
+    router?.push(`/${name}`);
+  };
   return (
     <div className="w-full h-full">
+
       <div className="min-w-full min-h-[300px] bg-primary">
+        <button
+          name="login"
+          onClick={handleRouting}
+          className="border border-white px-2 py-1 bg-secondary  rounded-sm absolute top-4 right-10 text-white"
+        >
+          Login
+        </button>
         <h1 className="text-white font-bold text-[24px] flex justify-center pt-6">
           Bayer Healthcare
         </h1>

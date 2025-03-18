@@ -22,7 +22,7 @@ const Login = () => {
   useEffect(() => {
     if (session) {
       toast.success("Login successful");
-      router.replace("/");
+      router.replace("/users/dashboard");
     }
   }, [router, session]);
 

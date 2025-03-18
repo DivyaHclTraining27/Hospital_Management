@@ -45,7 +45,7 @@ const Header = () => {
             <p>User type: {(session?.user as { role: string })?.role}</p>
             <p>Name: {session?.user?.name}</p>
           </div>
-          {(session?.user as { role: string })?.role !== "job-seeker" && (
+          {/* {(session?.user as { role: string })?.role !== "job-seeker" && (
             <button
               name="signOut"
               onClick={() => router.push("/job/create")}
@@ -53,7 +53,7 @@ const Header = () => {
             >
               Create job
             </button>
-          )}
+          )} */}
 
           {(session?.user as { role: string })?.role === "job-seeker" && (
             <button
@@ -66,10 +66,10 @@ const Header = () => {
           )}
 
           <button
-          data-testid="signOut"
+            data-testid="signOut"
             name="signOut"
             onClick={() => signOut()}
-            className="border border-black px-2 py-1 rounded-sm"
+            className="border border-black px-2 py-1 rounded-sm bg-red-500"
           >
             Sign out
           </button>

@@ -2,8 +2,8 @@ import Home from "@/components/Home";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Dashboard",
-  description: "Naukri.com",
+  title: "Home",
+  description: "Health Care",
 };
 
 export default function Root() {

@@ -1,6 +1,6 @@
 import { applicationStatus } from "@/constants/application";
 import mongoose from "mongoose";
-import { IJob } from "./job";
+import { IJob } from "./health";
 import { IUser } from "./user";
 
 export interface IApplication {
