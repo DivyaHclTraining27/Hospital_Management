@@ -8,9 +8,8 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Select from "react-select";
 import isEmpty from "lodash/isEmpty";
 
-import { registerSchema } from "@/schemas/registerSchema";
+// import { registerSchema } from "@/schemas/registerSchema";
 import { IUser } from "@/interfaces/user";
-import { skillOptions } from "@/constants/skills";
 import { API, AUTH, LOGIN, POST, REGISTER } from "@/constants/api";
 import { customFetch } from "@/lib/api";
 import {
@@ -29,8 +28,8 @@ const Register = () => {
     email: "",
     password: "",
     mobile: "",
-    role: "job-seeker",
-    skills: [],
+    role: "patient",
+    // skills: [],
     experience: "",
   };
 
@@ -68,7 +67,7 @@ const Register = () => {
         <h2 className="text-2xl font-bold text-center">Register</h2>
         <Formik
           initialValues={initialValues}
-          validationSchema={registerSchema}
+          // validationSchema={registerSchema}
           onSubmit={(values: IUser) => {
             registerUser(values);
           }}
@@ -164,7 +163,7 @@ const Register = () => {
                 />
               </div>
 
-              <div>
+              {/* <div>
                 <label className="block text-sm font-medium text-gray-700">
                   Role*
                 </label>
@@ -176,35 +175,27 @@ const Register = () => {
                       value="admin"
                       className="mr-2"
                     />
-                    Admin
+                    Provider
                   </label>
                   <label className="flex items-center">
                     <FastField
                       type="radio"
                       name="role"
-                      value="job-seeker"
+                      value="patient"
                       className="mr-2"
                     />
-                    Job Seeker
+                    Patient
                   </label>
-                  <label className="flex items-center">
-                    <FastField
-                      type="radio"
-                      name="role"
-                      value="employer"
-                      className="mr-2"
-                    />
-                    Employer
-                  </label>
+
                 </div>
                 <ErrorMessage
                   name="role"
                   component="div"
                   className="text-sm text-red-600"
                 />
-              </div>
+              </div> */}
 
-              {values?.role === "job-seeker" && (
+              {/* {values?.role === "patient" && (
                 <>
                   <div>
                     <label
@@ -216,7 +207,7 @@ const Register = () => {
                     <Select
                       data-testid="skills"
                       name="skills"
-                      options={skillOptions}
+                   //   options={skillOptions}
                       isMulti
                       className="mt-1"
                       classNamePrefix="select"
@@ -256,7 +247,7 @@ const Register = () => {
                     />
                   </div>
                 </>
-              )}
+              )} */}
 
               <button
                 data-testid="register"

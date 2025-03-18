@@ -1,4 +1,4 @@
-import Dashboard from "@/components/Dashboard";
+// import Dashboard from "@/components/Dashboard";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="flex h-full w-full">
-      <Dashboard />
+      {/* <Dashboard /> */}
     </div>
   );
 }

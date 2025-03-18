@@ -6,9 +6,12 @@ export interface IUser {
   email: string;
   mobile: string;
   password: string;
-  role: (typeof userTypes)[number];
-  skills?: string[];
-  experience?: string;
+  role?: (typeof userTypes)[number];
+  healthInfo: {
+    allergies: string,
+    medications: string
+  },
+
 }
 
 export interface IUserLogin {

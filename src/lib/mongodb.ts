@@ -28,7 +28,7 @@ export async function connectToDB() {
   if (!global.mongooseCache.promise) {
     global.mongooseCache.promise = mongoose
       .connect(MONGODB_URI, {
-        dbName: "naukri",
+        dbName: "hospitalDisease",
       })
       .then((mongoose) => mongoose.connection);
   }

@@ -7,7 +7,7 @@ import App from "./_app";
 import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
-  title: "Jobs",
+  title: "Disease Management",
   description: "Your job search ends here",
 };
 

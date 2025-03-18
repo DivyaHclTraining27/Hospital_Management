@@ -10,9 +10,11 @@ const UserSchema = new Schema<IUserDB>(
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     mobile: { type: String, required: true },
-    role: { type: String, enum: userTypes, required: true },
-    skills: { type: [String] },
-    experience: { type: String },
+    role: { type: String, enum: userTypes },
+    healthInfo: {
+      allergies: { type: String },
+      medications: { type: String },
+    },
   },
   { timestamps: true }
 );
